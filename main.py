@@ -27,13 +27,12 @@ def target_search(game,platform):
         game = game.replace(" ","+")
         platform = platform.replace(" ","+")
         driver.get("https://www.target.com/s?searchTerm={}+{}+game".format(game,platform))
-        item_web = "a[class='styles__StyledLink-sc-vpsldm-0 styles__StyledTitleLink-sc-h3r0um-1 fajhWk hWNNbR h-display-block h-text-bold h-text-bs']"
-        WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, item_web)))
-        driver.find_element(By.CSS_SELECTOR,item_web)
-        driver.execute_script("arguments[0].click();", driver.find_element(By.CSS_SELECTOR,item_web))
-        WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, '/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/h1[1]')))
-        price = float(driver.find_element(By.XPATH,"//span[@class='styles__CurrentPriceFontSize-sc-1mdemp3-1 dUPDAJ']").text[1:])
-        store_title = driver.find_element(By.XPATH, "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/h1[1]").text
+        item_web = "/html[1]/body[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]"
+        product_div = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH, item_web)))
+        driver.execute_script("arguments[0].click();", product_div.find_element(By.TAG_NAME,"a"))
+        WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '#pdp-product-title-id')))
+        price = float(driver.find_element(By.CSS_SELECTOR,".styles__CurrentPriceFontSize-sc-1mh0sjm-1.kwKAiv").text[1:])
+        store_title = driver.find_element(By.CSS_SELECTOR, "#pdp-product-title-id").text
         hyperlink = driver.current_url
         driver.get('data:,')
         return store_title, price, hyperlink
@@ -44,15 +43,16 @@ def bestbuy_search(game,platform):
     try:
         driver.get('https://www.bestbuy.com/')
         search_bar = driver.find_element(By.XPATH,"//input[@id='gh-search-input']")
-        search_bar.send_keys("{} {} physical".format(game,platform))
+        search_bar.send_keys(f"{game} {platform} physical")
         search_bar.send_keys(Keys.RETURN)
-        WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, "body > div:nth-child(6) > main:nth-child(2) > div:nth-child(12) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(5) > ol:nth-child(2) > li:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h4:nth-child(2) > a:nth-child(1)")))
-        item = driver.find_element(By.CSS_SELECTOR,"body > div:nth-child(6) > main:nth-child(2) > div:nth-child(12) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(5) > ol:nth-child(2) > li:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h4:nth-child(2) > a:nth-child(1)")
+        
+        WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, "body > div:nth-child(6) > main:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(4) > ol:nth-child(2) > li:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h4:nth-child(2) > a:nth-child(1)")))
+        item = driver.find_element(By.CSS_SELECTOR,"body > div:nth-child(6) > main:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(4) > ol:nth-child(2) > li:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h4:nth-child(2) > a:nth-child(1)")
         driver.execute_script("arguments[0].click();", item)
 
-        WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, "[data-sticky-media-gallery] .priceView-hero-price span")))
-        price = float(driver.find_element(By.CSS_SELECTOR,'[data-sticky-media-gallery] .priceView-hero-price span').text[1:])
-        store_title = driver.find_element(By.CSS_SELECTOR,"h1[class='heading-5 v-fw-regular']").text
+        WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".heading-5.v-fw-regular")))
+        price = float(driver.find_element(By.CSS_SELECTOR,"div[class='priceView-hero-price priceView-customer-price'] span[aria-hidden='true']").text[1:])
+        store_title = driver.find_element(By.CSS_SELECTOR,".heading-5.v-fw-regular").text
         hyperlink = driver.current_url
         driver.get('data:,')
         return store_title, price, hyperlink
