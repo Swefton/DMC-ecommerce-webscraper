@@ -8,7 +8,6 @@ from selenium.webdriver.edge.service import Service
 from serpapi import GoogleSearch
 import openpyxl
 import time
-import random
 
 PATH = 'C:\Program Files (x86)\msedgedriver.exe'
 
@@ -18,6 +17,8 @@ options.add_argument("--disable-blink-features=AutomationControlled")
 s = Service(executable_path=PATH)
 driver = webdriver.Edge(service=s, options=options)
 driver.get('data:,')
+driver.get('https://www.amazon.com/')
+time.sleep(3)
 wb = openpyxl.load_workbook('gamelistformat.xlsx', read_only=False, keep_vba=True)
 sheets = wb.sheetnames
 ws = wb[sheets[0]]
