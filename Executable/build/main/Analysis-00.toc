@@ -255,10 +255,10 @@
   ('stringprep',
    'C:\\Program Files\\Python310\\lib\\stringprep.py',
    'PYMODULE'),
+  ('_py_abc', 'C:\\Program Files\\Python310\\lib\\_py_abc.py', 'PYMODULE'),
   ('tracemalloc',
    'C:\\Program Files\\Python310\\lib\\tracemalloc.py',
    'PYMODULE'),
-  ('_py_abc', 'C:\\Program Files\\Python310\\lib\\_py_abc.py', 'PYMODULE'),
   ('openpyxl',
    'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
    'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\openpyxl\\__init__.py',
@@ -1807,59 +1807,59 @@
    'C:\\Users\\thelo\\OneDrive\\Desktop\\Python '
    'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\Executable\\build\\main\\base_library.zip',
    'DATA'),
-  ('certifi\\cacert.pem',
-   'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
-   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\certifi\\cacert.pem',
-   'DATA'),
   ('certifi\\py.typed',
    'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
    'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\certifi\\py.typed',
    'DATA'),
-  ('selenium\\webdriver\\common\\devtools\\v121\\py.typed',
+  ('certifi\\cacert.pem',
    'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
-   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v121\\py.typed',
-   'DATA'),
-  ('selenium\\webdriver\\common\\mutation-listener.js',
-   'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
-   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\mutation-listener.js',
+   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\certifi\\cacert.pem',
    'DATA'),
   ('selenium\\webdriver\\common\\devtools\\v122\\py.typed',
    'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
    'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v122\\py.typed',
    'DATA'),
-  ('selenium\\webdriver\\remote\\getAttribute.js',
+  ('selenium\\webdriver\\common\\macos\\selenium-manager',
    'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
-   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\remote\\getAttribute.js',
+   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\macos\\selenium-manager',
    'DATA'),
-  ('selenium\\webdriver\\remote\\isDisplayed.js',
+  ('selenium\\webdriver\\remote\\findElements.js',
    'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
-   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\remote\\isDisplayed.js',
-   'DATA'),
-  ('selenium\\webdriver\\common\\devtools\\v85\\py.typed',
-   'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
-   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v85\\py.typed',
-   'DATA'),
-  ('selenium\\py.typed',
-   'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
-   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\py.typed',
-   'DATA'),
-  ('selenium\\webdriver\\common\\devtools\\v120\\py.typed',
-   'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
-   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v120\\py.typed',
+   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\remote\\findElements.js',
    'DATA'),
   ('selenium\\webdriver\\common\\linux\\selenium-manager',
    'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
    'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\linux\\selenium-manager',
    'DATA'),
-  ('selenium\\webdriver\\common\\macos\\selenium-manager',
+  ('selenium\\webdriver\\remote\\isDisplayed.js',
    'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
-   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\macos\\selenium-manager',
+   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\remote\\isDisplayed.js',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\getAttribute.js',
+   'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
+   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\remote\\getAttribute.js',
+   'DATA'),
+  ('selenium\\py.typed',
+   'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
+   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\py.typed',
    'DATA'),
   ('selenium\\webdriver\\firefox\\webdriver_prefs.json',
    'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
    'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\firefox\\webdriver_prefs.json',
    'DATA'),
-  ('selenium\\webdriver\\remote\\findElements.js',
+  ('selenium\\webdriver\\common\\mutation-listener.js',
    'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
-   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\remote\\findElements.js',
+   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\mutation-listener.js',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v120\\py.typed',
+   'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
+   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v120\\py.typed',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v85\\py.typed',
+   'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
+   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v85\\py.typed',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v121\\py.typed',
+   'c:\\Users\\thelo\\OneDrive\\Desktop\\Python '
+   'Projects\\GitHubRepos\\DMC-ecommerce-webscraper\\.venv\\lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v121\\py.typed',
    'DATA')])

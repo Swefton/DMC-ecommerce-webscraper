@@ -12,7 +12,8 @@ To install DMC Ecommerce Webscraper, follow these steps:
     - Ensure that it is saved to program files (C:\Program Files (x86)\msedgedriver.exe).
 
 2. Download the Executable and the Format:
-    - [Games List Format + Executable Exe Download](https://github.com/Swefton/DMC-ecommerce-webscraper/tree/main/Executable/dist).
+    - [All Releases](https://github.com/Swefton/DMC-ecommerce-webscraper/releases).
+
 
 3. Ensure that Local Microsoft Edge and WebDriver are the same version:
     - The local edge browser and the webdriver needs to be the same version. Whenever the webdriver is installed, also update edge and then try not to update it again.
