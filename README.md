@@ -6,7 +6,7 @@ DMC Ecommerce Webscraper is a software designed for the Digital Multumedia Cente
 
 To install DMC Ecommerce Webscraper, follow these steps:
 
-1. Download the MicroSoft Edge WebDriver for Selenium:
+1. Download the Microsoft Edge WebDriver for Selenium:
     - [Microsoft WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH)
     - Download the latest stable release.
     - Ensure that it is saved to program files (C:\Program Files (x86)\msedgedriver.exe).
