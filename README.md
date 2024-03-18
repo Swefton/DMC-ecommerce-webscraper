@@ -1,6 +1,6 @@
 # DMC Ecommerce Webscraper
 
-DMC Ecommerce Webscraper is a software designed for the Digital Multumedia Center at MSU Libraries to automate the process of finding deals for future catalogue items on ecommerce websites. It facilitates the extraction of product information and screenshots, organizing them neatly into an Excel spreadsheet for easy reference and analysis. Automating this can save hours every time the catalogue needs to be updated.
+DMC Ecommerce Webscraper is a software designed for the Digital Multumedia Center at MSU Libraries to automate the process of finding deals for future catalogue items on ecommerce websites. It facilitates the extraction of product information and screenshots, organizing them neatly into an Excel spreadsheet for easy reference and analysis. Previously this was an intensely laborious task requiring manually surfing websites often several dozens of times copy pasting titles and noting down prices and links. Automating this has saved hours every time the catalogue needs to be updated.
 
 ## Installation
 
@@ -38,8 +38,8 @@ To use DMC Ecommerce Webscraper, follow these steps:
 
 ## Future Plans
 
-- Currently the script only checks the first item when searched. Moving forward I want for it to check every element on the page.
-- Sometimes the first result on the webpage isn't the correct game or it is for the wrong platform etc. I want to use a string similarity index check to error check for these.
+- [ ] Currently the script only checks the first item when searched. Moving forward I want for it to check every element on the page.
+- [ ] Sometimes the first result on the webpage isn't the correct game or it is for the wrong platform etc. I want to use a string similarity index check to error check for these.
 
 ```python
 import difflib
